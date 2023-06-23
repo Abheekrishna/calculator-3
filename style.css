@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 :root {
-        --background-color: #1a1a1a;
-        --calculator-body: #262626;
-        --output-color: #fff;
-        --calculator-hover: #2c2c2c;
-        --icon-color: #fff;
-        --footer-color: #fff;
-        --calculator-button-color: #fff;
+    --background-color: #1a1a1a;
+    --calculator-body: #262626;
+    --output-color: #fff;
+    --calculator-hover: #2c2c2c;
+    --icon-color: #fff;
+    --footer-color: #fff;
+    --calculator-button-color: #fff;
     }
 
 .lightmode {
@@ -76,7 +76,7 @@ body {
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
     color: var(--calculator-button-color);
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 .calculator > button:hover {
     background-color: var(--calculator-hover);
