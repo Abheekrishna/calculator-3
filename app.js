@@ -115,3 +115,9 @@ darkModeToggle.addEventListener('click', () => {
         disableDarkMode()
     }
 })
+
+
+const audio = new Audio('./audio/onLoad.mp3');
+window.onload = function () {
+    audio.play()
+}
