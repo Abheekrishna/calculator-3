@@ -6,6 +6,7 @@ const allClearBtn = document.querySelector('[data-allClear]');
 const deleteBtn = document.querySelector('[data-delete]');
 const equalsBtn = document.querySelector('[data-equals]');
 const year = document.getElementById('year');
+const darkModeToggle = document.getElementById('darkmode');
 
 
 
@@ -92,3 +93,25 @@ const reset = () => {
 
 const newYear = (new Date()).getFullYear();
 year.innerText = `${newYear}`;
+
+
+let darkMode = localStorage.getItem('darkmode');
+
+const enableDarkMode = () => {
+    document.body.classList.add('lightmode')
+    localStorage.setItem('darkmode', 'enabled');
+} 
+
+const disableDarkMode = () => {
+    document.body.classList.remove('lightmode')
+    localStorage.setItem('darkmode', null);
+}
+
+darkModeToggle.addEventListener('click', () => {
+    let darkMode = localStorage.getItem('darkmode');
+    if(darkMode !== 'enabled') {
+        enableDarkMode();
+    } else {
+        disableDarkMode()
+    }
+})
