@@ -64,3 +64,11 @@ body {
     background-color: #262626;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
 }
+
+a {
+    color: #262626;
+}
+footer {
+    text-align: center;
+    margin-top: 50px;
+}

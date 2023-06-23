@@ -5,6 +5,7 @@ const previousNumberTextDiv = document.querySelector('[data-previousNumberText]'
 const allClearBtn = document.querySelector('[data-allClear]');
 const deleteBtn = document.querySelector('[data-delete]');
 const equalsBtn = document.querySelector('[data-equals]');
+const year = document.getElementById('year');
 
 
 
@@ -88,3 +89,6 @@ const reset = () => {
         currentNumberTextDiv.innerText = '';
     })
 }
+
+const newYear = (new Date()).getFullYear();
+year.innerText = `${newYear}`;
