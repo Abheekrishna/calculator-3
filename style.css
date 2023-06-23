@@ -100,7 +100,19 @@ footer {
     margin-top: 20px;
     text-align: right;
     cursor: pointer;
+    transition: all 0.5s ease-in-out;
 }
+.fa-solid:hover {
+    animation: spin 1s ease-in-out 1;
+}
+@keyframes spin {
+    0% { 
+        transform:rotateY(0deg) ; 
+    }
+    100% { 
+        transform:  rotateY(360deg); 
+    }
+  }
 
 @media only screen and (max-width: 600px) {
     body {
