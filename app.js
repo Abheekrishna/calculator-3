@@ -63,6 +63,7 @@ const clear = (operationName = '') => {
 }
 
 equalsBtn.addEventListener('click', () => {
+    if(!currentNumber) return;
     mathOperations();
     clear(lastOperation);
     currentNumberTextDiv.innerText = result;
@@ -75,6 +76,11 @@ allClearBtn.addEventListener('click', () => {
     lastOperation = '';
     previousNumber = '';
     reset()
+})
+
+deleteBtn.addEventListener('click', () => {
+    currentNumber = currentNumber.toString().slice(0, -1);
+    currentNumberTextDiv.innerText = currentNumber;
 })
 
 const reset = () => {
