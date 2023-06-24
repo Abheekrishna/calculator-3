@@ -77,7 +77,6 @@ allClearBtn.addEventListener('click', () => {
     currentNumber = '';
     lastOperation = '';
     previousNumber = '';
-    reset()
 })
 
 deleteBtn.addEventListener('click', () => {
@@ -85,11 +84,6 @@ deleteBtn.addEventListener('click', () => {
     currentNumberTextDiv.innerText = currentNumber;
 })
 
-const reset = () => {
-    equalsBtn.addEventListener('click' , () => {
-        currentNumberTextDiv.innerText = '';
-    })
-}
 
 const newYear = (new Date()).getFullYear();
 year.innerText = `${newYear}`;
